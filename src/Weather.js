@@ -19,10 +19,12 @@ function Weather() {
         const temp = json.main.temp
         const feelsLike = json.main.feels_like
         const description  = json.weather[0].description 
+        const humidity = json.main.humidity
         setData({
             temp,
             feelsLike,
-            description 
+            description,
+            humidity
         })
        
 
